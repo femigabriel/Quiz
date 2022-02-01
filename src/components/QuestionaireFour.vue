@@ -236,10 +236,11 @@ export default {
     saveData() {
       this.$emit("gotoNext");
     },
-  },
     previous() {
       this.$emit("gotoPrevious");
     },
+  },
+    
 };
 </script>
 
