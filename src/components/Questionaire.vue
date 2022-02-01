@@ -229,7 +229,7 @@ export default {
   emits: [],
   methods: {
     saveData() {
-      this.$emit("gototwo");
+      this.$emit("gotoNext");
     },
   },
 };

@@ -1,11 +1,41 @@
 <template>
   <div id="app">
     <Header />
-    <Questionaire v-show="current == 0" @gototwo="current = current + 1" />
-    <QuestionaireTwo v-show="current == 1" @gotothree="current = current + 1" />
-    <QuestionaireThree v-show="current == 2" @gotofour="current = current + 1" />
-    <QuestionaireFour v-show="current == 3" @gotofive="current = current + 1" />
-    <QuestionaireFive v-show="current == 4" @gotosix="current = current + 1" />
+    <Questionaire
+     v-show="current == 0" 
+     @gotoNext="current = current + 1" 
+     />
+
+    <QuestionaireTwo 
+    v-show="current == 1" 
+    @gotoNext="current = current + 1" 
+     @gotoPrevious="current = current - 1"
+    
+    />
+    <QuestionaireThree
+      v-show="current == 2"
+      @gotoNext="current = current + 1"
+       @gotoPrevious="current = current - 1"
+      
+    />
+
+    <QuestionaireFour
+     v-show="current == 3"
+      @gotoNext="current = current + 1" 
+       @gotoPrevious="current = current - 1"
+      
+      />
+
+    <QuestionaireFive 
+    v-show="current == 4" 
+    @gotoNext="current = current + 1" 
+     @gotoPrevious="current = current - 1"
+    />
+
+    <QuestionaireSix
+      v-show="current == 5"
+      @gotoPrevious="current = current - 1"
+    />
   </div>
 </template>
 
@@ -16,7 +46,7 @@ import QuestionaireTwo from "./components/QuestionaireTwo";
 import QuestionaireThree from "./components/QuestionaireThree";
 import QuestionaireFour from "./components/QuestionaireFour";
 import QuestionaireFive from "./components/QuestionaireFive";
-
+import QuestionaireSix from "./components/QuestionaireSix";
 
 export default {
   name: "App",
@@ -26,14 +56,14 @@ export default {
     QuestionaireTwo,
     QuestionaireThree,
     QuestionaireFour,
-    QuestionaireFive
-
+    QuestionaireFive,
+    QuestionaireSix,
   },
 
-  data () {
+  data() {
     return {
-current: 0
-    }
+      current: 0,
+    };
   },
 };
 </script>

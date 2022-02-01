@@ -210,10 +210,18 @@
       </div>
     </div>
 
-    <div class="div">
+     <div class="div">
       <button @click="saveData" type="button" class="continue">
         <span class="span"
           >NEXT <i class="fa fa-angle-right" aria-hidden="true"></i
+        ></span>
+         </button>
+          <br>
+    </div>
+     <div class="previous">
+        <button @click="previous" type="button" class="continue">
+        <span class="span"
+          >PREVIOUS <i class="fa fa-angle-right" aria-hidden="true"></i
         ></span>
       </button>
     </div>
@@ -224,9 +232,13 @@ export default {
   emits: [],
   methods: {
     saveData() {
-      this.$emit("gotofour");
+      this.$emit("gotoNext");
+    },
+     previous() {
+      this.$emit("gotoPrevious");
     },
   },
+   
 };
 </script>
 
