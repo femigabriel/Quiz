@@ -99,7 +99,10 @@
                     ><input
                       type="radio"
                       name="inlineRadioOptions3"
-                      value="4" /><span class="option agree max"></span></label
+                      value="4"
+                      v-model="checked" /><span
+                      class="option agree max"
+                    ></span></label
                   ><label
                     ><input
                       type="radio"
@@ -162,7 +165,10 @@
                     ><input
                       type="radio"
                       name="inlineRadioOptions4"
-                      value="0" /><span class="option disagree max"></span
+                      value="0"
+                      v-model="selected" /><span
+                      class="option disagree max"
+                    ></span
                   ></label>
                 </div>
                 <div class="caption disagree">Disagree</div>
@@ -178,33 +184,44 @@
               <div class="decision">
                 <div class="caption agree">Agree</div>
                 <div class="options">
+                  <label 
+                    ><input
+                      type="radio"
+                      :name="inlineRadioOptions5"
+                      :value="4" 
+                      v-model="selected"
+                      /><span class="option agree max"></span></label
+                  ><label
+                    ><input
+                      type="radio"
+                      :name="inlineRadioOptions5"
+                      :value="3" 
+                      v-model="selected"
+                      /><span class="option agree min"></span></label
+                  ><label
+                    ><input
+                      type="radio"
+                      :name="inlineRadioOptions5"
+                      :value="2" 
+                      v-model="selected"
+                      /><span class="option neutral"></span></label
+                  ><label
+                    ><input
+                      type="radio"
+                      :name="inlineRadioOptions5"
+                      :value="1"
+                      v-model="selected"
+                      /><span
+                      class="option disagree min"
+                    ></span></label
+                  >
                   <label
                     ><input
                       type="radio"
-                      name="inlineRadioOptions5"
-                      value="4" /><span class="option agree max"></span></label
-                  ><label
-                    ><input
-                      type="radio"
-                      name="inlineRadioOptions5"
-                      value="3" /><span class="option agree min"></span></label
-                  ><label
-                    ><input
-                      type="radio"
-                      name="inlineRadioOptions5"
-                      value="2" /><span class="option neutral"></span></label
-                  ><label
-                    ><input
-                      type="radio"
-                      name="inlineRadioOptions5"
-                      value="1" /><span
-                      class="option disagree min"
-                    ></span></label
-                  ><label
-                    ><input
-                      type="radio"
-                      name="inlineRadioOptions5"
-                      value="0" /><span class="option disagree max"></span
+                      :name="inlineRadioOptions5"
+                      :value="0"
+                       v-model="selected"
+                        /><span class="option disagree max"></span
                   ></label>
                 </div>
                 <div class="caption disagree">Disagree</div>
@@ -226,6 +243,11 @@
 </template>
 <script>
 export default {
+  data() {
+    return {
+      selected: ''
+    };
+  },
   emits: [],
   methods: {
     saveData() {
@@ -236,6 +258,9 @@ export default {
 </script>
 
 <style>
+input .radio {
+  background: salmon;
+}
 .form {
   margin: 1.3em auto;
   background: #412167;
@@ -362,7 +387,7 @@ form input {
   border: 2px solid #00ff9a;
 }
 .test-questions.comp .question .decision .options .option.agree:hover {
-    cursor: pointer;
+  cursor: pointer;
   background: #00ff9a;
   transition: ease-in-out;
 }
@@ -395,8 +420,8 @@ label {
 }
 .test-questions.comp .question .decision .options .option.neutral:hover {
   background: #9b9faa;
-   transition: ease-in-out;
-     cursor: pointer;
+  transition: ease-in-out;
+  cursor: pointer;
 }
 .test-questions.comp .question .decision .options .option.min {
   flex: 0 0 28px;
@@ -407,7 +432,7 @@ label {
   border: 2px solid #bb1c1c;
 }
 .test-questions.comp .question .decision .options .option.disagree:hover {
- background: #bb1c1c;
+  background: #bb1c1c;
   transition: ease-in-out;
   cursor: pointer;
 }
@@ -445,9 +470,22 @@ form button.continue {
 }
 
 form button.continue:hover {
-   justify-content: center;
+  justify-content: center;
   transition: 0.4s;
   cursor: pointer;
-   background: #00ff9a;
+  background: rgb(0 0 0 / 30%)
+}
+
+[type=radio]:checked+.option.agree {
+    background-color: #00ff9a;
+    animation: pulse .5s ease-out;
+}
+[type=radio]:checked+.option.neutral {
+    background-color: #9b9faa;
+    animation: pulse .5s ease-out;
+}
+[type=radio]:checked+.option.disagree {
+    background-color: #bb1c1c;
+    animation: pulse .5s ease-out;
 }
 </style>
