@@ -11,39 +11,55 @@
               </div>
               <div class="decision">
                 <div class="caption agree">Agree</div>
-                <div class="options">
+                               <div class="options">
                   <label
                     ><input
                       type="radio"
-                      name="inlineRadioOptions31"
-                      value="4" /><span class="option agree max"></span></label
-                  ><label
-                    ><input
-                      type="radio"
-                      name="inlineRadioOptions31"
-                      value="3" /><span class="option agree min"></span></label
-                  ><label
-                    ><input
-                      type="radio"
-                      name="inlineRadioOptions31"
-                      value="2" /><span class="option neutral"></span></label
-                  ><label
-                    ><input
-                      type="radio"
-                      name="inlineRadioOptions31"
-                      value="1" /><span
-                      class="option disagree min"
+                      :name="inlineRadioOptions1"
+                      :value="4"
+                      v-model="selected1" /><span
+                      class="option agree max"
                     ></span></label
                   ><label
                     ><input
                       type="radio"
-                      name="inlineRadioOptions31"
-                      value="0" /><span class="option disagree max"></span
+                      :name="2"
+                      :value="3"
+                      v-model="selected1" /><span
+                      class="option agree min"
+                    ></span></label
+                  ><label
+                    ><input
+                      type="radio"
+                      :name="inlineRadioOptions1"
+                      :value="2"
+                      v-model="selected1" /><span
+                      class="option neutral"
+                    ></span></label
+                  ><label
+                    ><input
+                      type="radio"
+                      :name="inlineRadioOptions1"
+                      :value="1"
+                      v-model="selected1" /><span
+                      class="option disagree min"
+                    ></span
+                  ></label>
+                  <label
+                    ><input
+                      type="radio"
+                      :name="inlineRadioOptions1"
+                      :value="0"
+                      v-model="selected1" /><span
+                      class="option disagree max"
+                    ></span
                   ></label>
                 </div>
                 <div class="caption disagree">Disagree</div>
               </div>
+              <h4>Option Selected: {{ selected1 }}</h4>
             </div>
+
             <div class="question">
               <div class="qn-no">17</div>
               <div class="statement">
@@ -53,38 +69,54 @@
               <div class="decision">
                 <div class="caption agree">Agree</div>
                 <div class="options">
-                  <label
-                    ><input
-                      type="radio"
-                      name="inlineRadioOptions17"
-                      value="4" /><span class="option agree max"></span></label
-                  ><label
-                    ><input
-                      type="radio"
-                      name="inlineRadioOptions17"
-                      value="3" /><span class="option agree min"></span></label
-                  ><label
-                    ><input
-                      type="radio"
-                      name="inlineRadioOptions17"
-                      value="2" /><span class="option neutral"></span></label
-                  ><label
-                    ><input
-                      type="radio"
-                      name="inlineRadioOptions17"
-                      value="1" /><span
-                      class="option disagree min"
-                    ></span></label
-                  ><label
-                    ><input
-                      type="radio"
-                      name="inlineRadioOptions17"
-                      value="0" /><span class="option disagree max"></span
-                  ></label>
-                </div>
-                <div class="caption disagree">Disagree</div>
+                <label
+                  ><input
+                    type="radio"
+                    :name="inlineRadioOptions3"
+                    :value="4"
+                    v-model="selected3" /><span
+                    class="option agree max"
+                  ></span></label
+                ><label
+                  ><input
+                    type="radio"
+                    :name="inlineRadioOptions3"
+                    :value="3"
+                    v-model="selected3" /><span
+                    class="option agree min"
+                  ></span></label
+                ><label
+                  ><input
+                    type="radio"
+                    :name="inlineRadioOptions3"
+                    :value="2"
+                    v-model="selected3" /><span
+                    class="option neutral"
+                  ></span></label
+                ><label
+                  ><input
+                    type="radio"
+                    :name="inlineRadioOptions3"
+                    :value="1"
+                    v-model="selected3" /><span
+                    class="option disagree min"
+                  ></span
+                ></label>
+                <label
+                  ><input
+                    type="radio"
+                    :name="inlineRadioOptions3"
+                    :value="0"
+                    v-model="selected3" /><span
+                    class="option disagree max"
+                  ></span
+                ></label>
               </div>
+              <div class="caption disagree">Disagree</div>
             </div>
+            <h4>Option selected: {{ selected3 }}</h4>
+          </div>
+
             <div class="question">
               <div class="qn-no">18</div>
               <div class="statement">
@@ -94,38 +126,54 @@
               <div class="decision">
                 <div class="caption agree">Agree</div>
                 <div class="options">
-                  <label
-                    ><input
-                      type="radio"
-                      name="inlineRadioOptions21"
-                      value="4" /><span class="option agree max"></span></label
-                  ><label
-                    ><input
-                      type="radio"
-                      name="inlineRadioOptions21"
-                      value="3" /><span class="option agree min"></span></label
-                  ><label
-                    ><input
-                      type="radio"
-                      name="inlineRadioOptions21"
-                      value="2" /><span class="option neutral"></span></label
-                  ><label
-                    ><input
-                      type="radio"
-                      name="inlineRadioOptions21"
-                      value="1" /><span
-                      class="option disagree min"
-                    ></span></label
-                  ><label
-                    ><input
-                      type="radio"
-                      name="inlineRadioOptions21"
-                      value="0" /><span class="option disagree max"></span
-                  ></label>
-                </div>
-                <div class="caption disagree">Disagree</div>
+                <label
+                  ><input
+                    type="radio"
+                    :name="inlineRadioOptions3"
+                    :value="4"
+                    v-model="selected3" /><span
+                    class="option agree max"
+                  ></span></label
+                ><label
+                  ><input
+                    type="radio"
+                    :name="inlineRadioOptions3"
+                    :value="3"
+                    v-model="selected3" /><span
+                    class="option agree min"
+                  ></span></label
+                ><label
+                  ><input
+                    type="radio"
+                    :name="inlineRadioOptions3"
+                    :value="2"
+                    v-model="selected3" /><span
+                    class="option neutral"
+                  ></span></label
+                ><label
+                  ><input
+                    type="radio"
+                    :name="inlineRadioOptions3"
+                    :value="1"
+                    v-model="selected3" /><span
+                    class="option disagree min"
+                  ></span
+                ></label>
+                <label
+                  ><input
+                    type="radio"
+                    :name="inlineRadioOptions3"
+                    :value="0"
+                    v-model="selected3" /><span
+                    class="option disagree max"
+                  ></span
+                ></label>
               </div>
+              <div class="caption disagree">Disagree</div>
             </div>
+            <h4>Option selected: {{ selected3 }}</h4>
+          </div>
+
             <div class="question">
               <div class="qn-no">19</div>
               <div class="statement">
@@ -135,38 +183,54 @@
               <div class="decision">
                 <div class="caption agree">Agree</div>
                 <div class="options">
-                  <label
-                    ><input
-                      type="radio"
-                      name="inlineRadioOptions25"
-                      value="4" /><span class="option agree max"></span></label
-                  ><label
-                    ><input
-                      type="radio"
-                      name="inlineRadioOptions25"
-                      value="3" /><span class="option agree min"></span></label
-                  ><label
-                    ><input
-                      type="radio"
-                      name="inlineRadioOptions25"
-                      value="2" /><span class="option neutral"></span></label
-                  ><label
-                    ><input
-                      type="radio"
-                      name="inlineRadioOptions25"
-                      value="1" /><span
-                      class="option disagree min"
-                    ></span></label
-                  ><label
-                    ><input
-                      type="radio"
-                      name="inlineRadioOptions25"
-                      value="0" /><span class="option disagree max"></span
-                  ></label>
-                </div>
-                <div class="caption disagree">Disagree</div>
+                <label
+                  ><input
+                    type="radio"
+                    :name="inlineRadioOptions4"
+                    :value="4"
+                    v-model="selected4" /><span
+                    class="option agree max"
+                  ></span></label
+                ><label
+                  ><input
+                    type="radio"
+                    :name="inlineRadioOptions4"
+                    :value="3"
+                    v-model="selected4" /><span
+                    class="option agree min"
+                  ></span></label
+                ><label
+                  ><input
+                    type="radio"
+                    :name="inlineRadioOptions4"
+                    :value="2"
+                    v-model="selected4" /><span
+                    class="option neutral"
+                  ></span></label
+                ><label
+                  ><input
+                    type="radio"
+                    :name="inlineRadioOptions4"
+                    :value="1"
+                    v-model="selected4" /><span
+                    class="option disagree min"
+                  ></span
+                ></label>
+                <label
+                  ><input
+                    type="radio"
+                    :name="inlineRadioOptions4"
+                    :value="0"
+                    v-model="selected4" /><span
+                    class="option disagree max"
+                  ></span
+                ></label>
               </div>
+              <div class="caption disagree">Disagree</div>
             </div>
+            <h4>Option selected: {{ selected4 }}</h4>
+          </div>
+
             <div class="question">
               <div class="qn-no">20</div>
               <div class="statement">
@@ -175,42 +239,58 @@
               <div class="decision">
                 <div class="caption agree">Agree</div>
                 <div class="options">
-                  <label
-                    ><input
-                      type="radio"
-                      name="inlineRadioOptions27"
-                      value="4" /><span class="option agree max"></span></label
-                  ><label
-                    ><input
-                      type="radio"
-                      name="inlineRadioOptions27"
-                      value="3" /><span class="option agree min"></span></label
-                  ><label
-                    ><input
-                      type="radio"
-                      name="inlineRadioOptions27"
-                      value="2" /><span class="option neutral"></span></label
-                  ><label
-                    ><input
-                      type="radio"
-                      name="inlineRadioOptions27"
-                      value="1" /><span
-                      class="option disagree min"
-                    ></span></label
-                  ><label
-                    ><input
-                      type="radio"
-                      name="inlineRadioOptions27"
-                      value="0" /><span class="option disagree max"></span
-                  ></label>
-                </div>
-                <div class="caption disagree">Disagree</div>
+                <label
+                  ><input
+                    type="radio"
+                    :name="inlineRadioOptions5"
+                    :value="4"
+                    v-model="selected5" /><span
+                    class="option agree max"
+                  ></span></label
+                ><label
+                  ><input
+                    type="radio"
+                    :name="inlineRadioOptions5"
+                    :value="3"
+                    v-model="selected5" /><span
+                    class="option agree min"
+                  ></span></label
+                ><label
+                  ><input
+                    type="radio"
+                    :name="inlineRadioOptions5"
+                    :value="2"
+                    v-model="selected5" /><span
+                    class="option neutral"
+                  ></span></label
+                ><label
+                  ><input
+                    type="radio"
+                    :name="inlineRadioOptions5"
+                    :value="1"
+                    v-model="selected5" /><span
+                    class="option disagree min"
+                  ></span
+                ></label>
+                <label
+                  ><input
+                    type="radio"
+                    :name="inlineRadioOptions5"
+                    :value="0"
+                    v-model="selected5" /><span
+                    class="option disagree max"
+                  ></span
+                ></label>
+              </div>
+              <div class="caption disagree">Disagree</div>
+            </div>
+            <h4>Option Selected: {{ selected5 }}</h4>
+          </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+     
 
     <div class="div">
       <button @click="saveData" type="button" class="continue">
@@ -231,6 +311,15 @@
 </template>
 <script>
 export default {
+  data() {
+    return {
+      selected5: "",
+      selected4: "",
+      selected3: "",
+      selected2: "",
+      selected1: "",
+    };
+  },
   emits: [],
   methods: {
     saveData() {
