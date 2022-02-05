@@ -17,7 +17,7 @@
                       type="radio"
                       :name="inlineRadioOptions1"
                       :value="4"
-                      v-model="selected1" /><span
+                      v-model="selected16" /><span
                       class="option agree max"
                     ></span></label
                   ><label
@@ -25,7 +25,7 @@
                       type="radio"
                       :name="2"
                       :value="3"
-                      v-model="selected1" /><span
+                      v-model="selected16" /><span
                       class="option agree min"
                     ></span></label
                   ><label
@@ -33,7 +33,7 @@
                       type="radio"
                       :name="inlineRadioOptions1"
                       :value="2"
-                      v-model="selected1" /><span
+                      v-model="selected16" /><span
                       class="option neutral"
                     ></span></label
                   ><label
@@ -41,7 +41,7 @@
                       type="radio"
                       :name="inlineRadioOptions1"
                       :value="1"
-                      v-model="selected1" /><span
+                      v-model="selected16" /><span
                       class="option disagree min"
                     ></span
                   ></label>
@@ -50,14 +50,14 @@
                       type="radio"
                       :name="inlineRadioOptions1"
                       :value="0"
-                      v-model="selected1" /><span
+                      v-model="selected16" /><span
                       class="option disagree max"
                     ></span
                   ></label>
                 </div>
                 <div class="caption disagree">Disagree</div>
               </div>
-              <h4>Option Selected: {{ selected1 }}</h4>
+              <h4>Option Selected: {{ selected16 }}</h4>
             </div>
 
             <div class="question">
@@ -74,7 +74,7 @@
                     type="radio"
                     :name="inlineRadioOptions3"
                     :value="4"
-                    v-model="selected3" /><span
+                    v-model="selected17" /><span
                     class="option agree max"
                   ></span></label
                 ><label
@@ -82,7 +82,7 @@
                     type="radio"
                     :name="inlineRadioOptions3"
                     :value="3"
-                    v-model="selected3" /><span
+                    v-model="selected17" /><span
                     class="option agree min"
                   ></span></label
                 ><label
@@ -90,7 +90,7 @@
                     type="radio"
                     :name="inlineRadioOptions3"
                     :value="2"
-                    v-model="selected3" /><span
+                    v-model="selected17" /><span
                     class="option neutral"
                   ></span></label
                 ><label
@@ -98,7 +98,7 @@
                     type="radio"
                     :name="inlineRadioOptions3"
                     :value="1"
-                    v-model="selected3" /><span
+                    v-model="selected17" /><span
                     class="option disagree min"
                   ></span
                 ></label>
@@ -107,14 +107,14 @@
                     type="radio"
                     :name="inlineRadioOptions3"
                     :value="0"
-                    v-model="selected3" /><span
+                    v-model="selected17" /><span
                     class="option disagree max"
                   ></span
                 ></label>
               </div>
               <div class="caption disagree">Disagree</div>
             </div>
-            <h4>Option selected: {{ selected3 }}</h4>
+            <h4>Option selected: {{ selected17 }}</h4>
           </div>
 
             <div class="question">
@@ -131,7 +131,7 @@
                     type="radio"
                     :name="inlineRadioOptions3"
                     :value="4"
-                    v-model="selected3" /><span
+                    v-model="selected18" /><span
                     class="option agree max"
                   ></span></label
                 ><label
@@ -139,7 +139,7 @@
                     type="radio"
                     :name="inlineRadioOptions3"
                     :value="3"
-                    v-model="selected3" /><span
+                    v-model="selected18" /><span
                     class="option agree min"
                   ></span></label
                 ><label
@@ -147,7 +147,7 @@
                     type="radio"
                     :name="inlineRadioOptions3"
                     :value="2"
-                    v-model="selected3" /><span
+                    v-model="selected18" /><span
                     class="option neutral"
                   ></span></label
                 ><label
@@ -155,7 +155,7 @@
                     type="radio"
                     :name="inlineRadioOptions3"
                     :value="1"
-                    v-model="selected3" /><span
+                    v-model="selected18" /><span
                     class="option disagree min"
                   ></span
                 ></label>
@@ -164,14 +164,14 @@
                     type="radio"
                     :name="inlineRadioOptions3"
                     :value="0"
-                    v-model="selected3" /><span
+                    v-model="selected18" /><span
                     class="option disagree max"
                   ></span
                 ></label>
               </div>
               <div class="caption disagree">Disagree</div>
             </div>
-            <h4>Option selected: {{ selected3 }}</h4>
+            <h4>Option selected: {{ selected18 }}</h4>
           </div>
 
             <div class="question">
@@ -188,7 +188,7 @@
                     type="radio"
                     :name="inlineRadioOptions4"
                     :value="4"
-                    v-model="selected4" /><span
+                    v-model="selected19" /><span
                     class="option agree max"
                   ></span></label
                 ><label
@@ -196,7 +196,7 @@
                     type="radio"
                     :name="inlineRadioOptions4"
                     :value="3"
-                    v-model="selected4" /><span
+                    v-model="selected19" /><span
                     class="option agree min"
                   ></span></label
                 ><label
@@ -204,7 +204,7 @@
                     type="radio"
                     :name="inlineRadioOptions4"
                     :value="2"
-                    v-model="selected4" /><span
+                    v-model="selected19" /><span
                     class="option neutral"
                   ></span></label
                 ><label
@@ -212,7 +212,7 @@
                     type="radio"
                     :name="inlineRadioOptions4"
                     :value="1"
-                    v-model="selected4" /><span
+                    v-model="selected19" /><span
                     class="option disagree min"
                   ></span
                 ></label>
@@ -221,14 +221,14 @@
                     type="radio"
                     :name="inlineRadioOptions4"
                     :value="0"
-                    v-model="selected4" /><span
+                    v-model="selected19" /><span
                     class="option disagree max"
                   ></span
                 ></label>
               </div>
               <div class="caption disagree">Disagree</div>
             </div>
-            <h4>Option selected: {{ selected4 }}</h4>
+            <h4>Option selected: {{ selected19 }}</h4>
           </div>
 
             <div class="question">
@@ -244,7 +244,7 @@
                     type="radio"
                     :name="inlineRadioOptions5"
                     :value="4"
-                    v-model="selected5" /><span
+                    v-model="selected20" /><span
                     class="option agree max"
                   ></span></label
                 ><label
@@ -252,7 +252,7 @@
                     type="radio"
                     :name="inlineRadioOptions5"
                     :value="3"
-                    v-model="selected5" /><span
+                    v-model="selected20" /><span
                     class="option agree min"
                   ></span></label
                 ><label
@@ -260,7 +260,7 @@
                     type="radio"
                     :name="inlineRadioOptions5"
                     :value="2"
-                    v-model="selected5" /><span
+                    v-model="selected20" /><span
                     class="option neutral"
                   ></span></label
                 ><label
@@ -268,7 +268,7 @@
                     type="radio"
                     :name="inlineRadioOptions5"
                     :value="1"
-                    v-model="selected5" /><span
+                    v-model="selected20" /><span
                     class="option disagree min"
                   ></span
                 ></label>
@@ -277,15 +277,24 @@
                     type="radio"
                     :name="inlineRadioOptions5"
                     :value="0"
-                    v-model="selected5" /><span
+                    v-model="selected20" /><span
                     class="option disagree max"
                   ></span
                 ></label>
               </div>
               <div class="caption disagree">Disagree</div>
             </div>
-            <h4>Option Selected: {{ selected5 }}</h4>
+           
           </div>
+           <h4>Option Selected: {{ selected20 }}</h4>
+            <p v-if="errors.length > 0">
+            <ul class="errorMsg">
+  <li v-for="e in errors" :key="e">
+    {{ e }}
+  </li>
+</ul>
+             
+            </p>
               </div>
             </div>
           </div>
@@ -313,26 +322,57 @@
 export default {
   data() {
     return {
-      selected5: "",
-      selected4: "",
-      selected3: "",
-      selected2: "",
-      selected1: "",
+      selected20: "",
+      selected19: "",
+      selected18: "",
+      selected17: "",
+      selected16: "",
+
+      errors: [],
+      options: "",
     };
   },
   emits: [],
   methods: {
-    saveData() {
-      this.$emit("gotoNext");
-    },
     previous() {
       this.$emit("gotoPrevious");
     },
-  },
+    saveData(e) {
+      if (!this.selected16) 
+      {
+        this.errors.push("please Attempt Question 16");
+      }
+
+      if (!this.selected17) {
+        this.errors.push("please Attempt Question 17");
+      }
+
+      if (!this.selected18) {
+        this.errors.push("please Attempt Question 18");
+      }
+
+      if (!this.selected19) {
+        this.errors.push("please Attempt Question 19");
+      }
+
+      if (!this.selected20) {
+        this.errors.push("Please Attempt Question 20");
+      }
+
+      console.warn("errors", this.errors);
+      e.preventDefault();
+      
+      if (this.errors.length < 1 ) {
+        this.$emit("gotoNext");
+        
+      }
     
+    
+    },
+    
+  },
 };
 </script>
-
 <style>
 
 </style>
