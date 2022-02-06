@@ -1,5 +1,5 @@
 <template>
-  <form class="form">
+  <form action="https://submit-form.com/<form-id>">
     <div class="Step1">
       <div class="row">
         <div class="test-questions comp">
