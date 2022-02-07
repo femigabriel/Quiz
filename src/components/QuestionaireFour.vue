@@ -1,5 +1,5 @@
 <template>
-  <form class="form">
+   <form class="form">
     <div class="Step1">
       <div class="row">
         <div class="test-questions comp">

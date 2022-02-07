@@ -1,5 +1,5 @@
 <template>
-  <form action="https://submit-form.com/<form-id>">
+  <form class="form">
     <div class="Step1">
       <div class="row">
         <div class="test-questions comp">
@@ -20,78 +20,46 @@
                  </ul>
                 </p>
             
-              <div class="divider"></div>
+     <div class="divider"></div>
+		<div class="step div">
+			<div class="item">
+				<div class="div">
+					<input
+						type="text"
+						id="name"
+						name="name"
+						placeholder="Name"
+						required=""
+						v-model="name"
+					/>
+				</div>
+			</div>
+			</div>
               <div class="step div">
                 <div class="item">
                   <div class="div">
-                    <input
-                      name="name"
-                      type="text"
-                      placeholder="Input Your Name"
-                      v-model="name"
+                   <input
+						type="email"
+						id="email"
+						name="email"
+						placeholder="Email"
+						required=""
+						v-model="email"
                     />
                   </div>
-                </div>
-              </div>
-              <div class="step div">
-                <div class="item">
-                  <div class="div">
-                    <input
-                    
-                      name="email"
-                      placeholder="Input Your Email"
-                      type="email"
-                      v-model="email"
-                    />
-                  </div>
-                  <p class="smallTextEU"></p>
-                </div>
-              </div>
-              <div class="div">
-                <button
-                  type="button"
-                  class="continue button continue_e9QCT submitBtn"
-                >
-                  <div class="lds-ellipsis" style="display: none">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                  </div>
-                  <span class="span text"
-                    >
-                    <i class="fa fa-angle-right" aria-hidden="true"></i
-                  ></span>
-                </button>
-              </div>
-            </div>
-            <div class="Step6" style="display: none">
-              <h2 class="h2">Where should your free reading be sent to?</h2>
-              <div class="seperator div seperator_2B5q5"></div>
-              <div class="step div">
-                <div class="item">
-                  <div class="div">
-                    <input
-                      class="email input"
-                      name="email"
-                      placeholder="Enter Your Email..."
-                      type="email"
-                    />
-                  </div>
-                  <p class="smallTextEU"></p>
                 </div>
               </div>
              
-           </div>
-            <div class="errorMsg"></div>
+            </div>
+          </div>
           </div>
         </div>
       </div>
-    </div>
+    
  <div class="div">
       <button @click="saveData" type="button" class="continue">
         <span class="span"
-          >See My Results <i class="fa fa-angle-right" aria-hidden="true"></i
+          >See My Results <i class="fa fa-angle-right" ></i
         ></span>
          </button>
             <br>
@@ -99,7 +67,7 @@
      <div class="previous">
         <button @click="previous" type="button" class="continue">
         <span class="span"
-          >PREVIOUS <i class="fa fa-angle-right" aria-hidden="true"></i
+          >PREVIOUS <i class="fa fa-angle-right" ></i
         ></span>
       </button>
     </div>
@@ -136,7 +104,7 @@ export default {
     
 
       if (this.errors.length < 1 ) {
-        this.$emit("gotoNext");
+        this.$emit("submitForm");
       }
     },
      previous() {

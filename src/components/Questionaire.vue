@@ -1,5 +1,5 @@
-\<template>
-  <form action="https://submit-form.com/8hvlB7dC">
+<template>
+   <form class="form">
     <div class="Step1">
       <div class="row">
         <div class="test-questions comp">
@@ -221,7 +221,6 @@ export default {
       selected3: "",
       selected2: "",
       selected1: "",
-
       errors: [],
       options: "",
     };

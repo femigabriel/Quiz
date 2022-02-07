@@ -35,11 +35,13 @@
     <QuestionaireSix
       v-show="current == 5"
       @gotoPrevious="current = current - 1"
+      @submitForm = 'saveData'
     />
   </div>
 </template>
 
 <script>
+import axios from 'axios';
 import Header from "./components/Header";
 import Questionaire from "./components/Questionaire";
 import QuestionaireTwo from "./components/QuestionaireTwo";
@@ -47,6 +49,7 @@ import QuestionaireThree from "./components/QuestionaireThree";
 import QuestionaireFour from "./components/QuestionaireFour";
 import QuestionaireFive from "./components/QuestionaireFive";
 import QuestionaireSix from "./components/QuestionaireSix";
+
 
 
 export default {
@@ -68,6 +71,23 @@ export default {
     };
     
   },
+  methods: {
+    saveData () {
+     this.current = this.current + 1
+ axios.post("https://submit-form.com/8hvlB7dC", {
+  message: "Hello, World",
+  _email: {
+    from: "A Human Being",
+    subject: "A message awaits.",
+    template: {
+      title: false,
+      footer: false,
+    },
+  },
+});
+    }
+   
+  }
 };
 </script>
 
