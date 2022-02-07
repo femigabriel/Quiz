@@ -1,5 +1,5 @@
 \<template>
-  <form class="form">
+  <form action="https://submit-form.com/your-form-id">
     <div class="Step1">
       <div class="row">
         <div class="test-questions comp">
@@ -14,25 +14,29 @@
                 <div class="caption agree">Agree</div>
                 <div class="options">
                   <label
-                    ><input type="radio" value="4" v-model="selected1" /><span
+                    ><input type="radio"
+                     value="4"
+                     name="option agree max"
+                      v-model="selected1"
+                       /><span
                       class="option agree max"
                     ></span></label
                   ><label
                     ><input type="radio" value="3" v-model="selected1" /><span
-                      class="option agree min"
+                      class="option agree min" name="option agree min"
                     ></span></label
                   ><label
                     ><input type="radio" value="2" v-model="selected1" /><span
-                      class="option neutral"
+                      class="option neutral" name="option neutral"
                     ></span></label
                   ><label
                     ><input type="radio" value="1" v-model="selected1" /><span
-                      class="option disagree min"
+                      class="option disagree min"  name="option disagree min" 
                     ></span
                   ></label>
                   <label
                     ><input type="radio" value="0" v-model="selected1" /><span
-                      class="option disagree max"
+                      class="option disagree max" name="option disagree max" 
                     ></span
                   ></label>
                 </div>
@@ -51,24 +55,24 @@
                 <div class="options">
                   <label
                     ><input type="radio" value="4" v-model="selected2" /><span
-                      class="option agree max"
+                      class="option agree max" name="option agree max" 
                     ></span></label
                   ><label
                     ><input type="radio" value="3" v-model="selected2" /><span
-                      class="option agree min"
+                      class="option agree min" name="option agree min" 
                     ></span></label
                   ><label
                     ><input type="radio" value="2" v-model="selected2" /><span
-                      class="option neutral"
+                      class="option neutral" name="option neutral" 
                     ></span></label
                   ><label
                     ><input type="radio" value="1" v-model="selected2" /><span
-                      class="option disagree min"
+                      class="option disagree min"  name="option disagree min"
                     ></span
                   ></label>
                   <label
                     ><input type="radio" value="0" v-model="selected2" /><span
-                      class="option disagree max"
+                      class="option disagree max"  name="option disagree max"
                     ></span
                   ></label>
                 </div>
@@ -88,24 +92,24 @@
               <div class="options">
                 <label
                   ><input type="radio" value="4" v-model="selected3" /><span
-                    class="option agree max"
+                    class="option agree max"  name="option agree max"
                   ></span></label
                 ><label
                   ><input type="radio" value="3" v-model="selected3" /><span
-                    class="option agree min"
+                    class="option agree min" name="option agree min"
                   ></span></label
                 ><label
                   ><input type="radio" value="2" v-model="selected3" /><span
-                    class="option neutral"
+                    class="option neutral" name="option neutral"
                   ></span></label
                 ><label
                   ><input type="radio" value="1" v-model="selected3" /><span
-                    class="option disagree min"
+                    class="option disagree min"  name="option disagree min"
                   ></span
                 ></label>
                 <label
                   ><input type="radio" value="0" v-model="selected3" /><span
-                    class="option disagree max"
+                    class="option disagree max" name="option disagree max"
                   ></span
                 ></label>
               </div>
@@ -125,24 +129,24 @@
               <div class="options">
                 <label
                   ><input type="radio" value="4" v-model="selected4" /><span
-                    class="option agree max"
+                    class="option agree max"  name="option agree max"
                   ></span></label
                 ><label
                   ><input type="radio" value="3" v-model="selected4" /><span
-                    class="option agree min"
+                    class="option agree min"  name="option agree min"
                   ></span></label
                 ><label
                   ><input type="radio" value="2" v-model="selected4" /><span
-                    class="option neutral"
+                    class="option neutral"  name="option neutral"
                   ></span></label
                 ><label
                   ><input type="radio" value="1" v-model="selected4" /><span
-                    class="option disagree min"
+                    class="option disagree min" name="option disagree min"
                   ></span
                 ></label>
                 <label
                   ><input type="radio" value="0" v-model="selected4" /><span
-                    class="option disagree max"
+                    class="option disagree max" name="option disagree max"
                   ></span
                 ></label>
               </div>
@@ -162,24 +166,24 @@
               <div class="options">
                 <label
                   ><input type="radio" value="4" v-model="selected5" /><span
-                    class="option agree max"
+                    class="option agree max"  name="option agree max"
                   ></span></label
                 ><label
                   ><input type="radio" value="3" v-model="selected5" /><span
-                    class="option agree min"
+                    class="option agree min" name="option agree min"
                   ></span></label
                 ><label
                   ><input type="radio" value="2" v-model="selected5" /><span
-                    class="option neutral"
+                    class="option neutral" name="option neutral"
                   ></span></label
                 ><label
                   ><input type="radio" value="1" v-model="selected5" /><span
-                    class="option disagree min"
+                    class="option disagree min" name="option disagree min"
                   ></span
                 ></label>
                 <label
                   ><input type="radio" value="0" v-model="selected5" /><span
-                    class="option disagree max"
+                    class="option disagree max" name="option disagree max"
                   ></span
                 ></label>
               </div>
@@ -200,7 +204,7 @@
     </div>
 
     <div class="div">
-      <button @click="saveData" type="button" class="continue">
+      <button @click="saveData" type="submit" class="continue">
         <span class="span"
           >NEXT <i class="fa fa-angle-right" aria-hidden="true"></i
         ></span>
@@ -251,6 +255,7 @@ export default {
       
       if (this.errors.length < 1 ) {
         this.$emit("gotoNext");
+        e.preventDefault();
       }
     
     },

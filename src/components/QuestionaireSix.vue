@@ -17,13 +17,7 @@
       </div>
     </div>
    
-    <div class="div">
-      <button @click="previous" type="button" class="continue">
-        <span class="span"
-          >PREVIOUS <i class="fa fa-angle-right" aria-hidden="true"></i
-        ></span>
-      </button>
-    </div>
+    
   </form>
 </template>
 <script>
