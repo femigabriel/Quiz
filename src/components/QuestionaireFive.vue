@@ -101,10 +101,9 @@ export default {
       this.errors.push("please input your email")
     }
     
-    
-
-      if (this.errors.length < 1 ) {
-        this.$emit("submitForm");
+    if (this.errors.length < 1 ) {
+      
+      this.$emit("submitForm");
       }
     },
      previous() {

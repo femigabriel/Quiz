@@ -1,47 +1,41 @@
 <template>
   <div id="app">
     <Header />
-    <Questionaire
-     v-show="current == 0" 
-     @gotoNext="current = current + 1" 
-     />
+    <Questionaire v-show="current == 0" @gotoNext="current = current + 1" />
 
-    <QuestionaireTwo 
-    v-show="current == 1" 
-    @gotoNext="current = current + 1" 
-     @gotoPrevious="current = current - 1"
-    
+    <QuestionaireTwo
+      v-show="current == 1"
+      @gotoNext="current = current + 1"
+      @gotoPrevious="current = current - 1"
     />
     <QuestionaireThree
       v-show="current == 2"
       @gotoNext="current = current + 1"
-       @gotoPrevious="current = current - 1"
-      
+      @gotoPrevious="current = current - 1"
     />
 
     <QuestionaireFour
-     v-show="current == 3"
-      @gotoNext="current = current + 1" 
-       @gotoPrevious="current = current - 1"
-      
-      />
+      v-show="current == 3"
+      @gotoNext="current = current + 1"
+      @gotoPrevious="current = current - 1"
+    />
 
-    <QuestionaireFive 
-    v-show="current == 4" 
-    @gotoNext="current = current + 1" 
-     @gotoPrevious="current = current - 1"
+    <QuestionaireFive
+      v-show="current == 4"
+     @submitForm="saveData"
+      @gotoPrevious="current = current - 1"
     />
 
     <QuestionaireSix
       v-show="current == 5"
       @gotoPrevious="current = current - 1"
-      @submitForm = 'saveData'
+      
     />
   </div>
 </template>
 
 <script>
-import axios from 'axios';
+import axios from "axios";
 import Header from "./components/Header";
 import Questionaire from "./components/Questionaire";
 import QuestionaireTwo from "./components/QuestionaireTwo";
@@ -49,8 +43,6 @@ import QuestionaireThree from "./components/QuestionaireThree";
 import QuestionaireFour from "./components/QuestionaireFour";
 import QuestionaireFive from "./components/QuestionaireFive";
 import QuestionaireSix from "./components/QuestionaireSix";
-
-
 
 export default {
   name: "App",
@@ -67,27 +59,29 @@ export default {
   data() {
     return {
       current: 0,
-     
     };
-    
   },
   methods: {
-    saveData () {
-     this.current = this.current + 1
- axios.post("https://submit-form.com/8hvlB7dC", {
-  message: "Hello, World",
-  _email: {
-    from: "A Human Being",
-    subject: "A message awaits.",
-    template: {
-      title: false,
-      footer: false,
+    saveData() {
+      console.log ('Hello Tesing')
+      this.current = this.current + 1;
+       let result = ""
+       result += "Question 1: Poor \n"
+      result += "Question 2: Good"
+      axios.post("https://submit-form.com/8hvlB7dC", {
+        message: result,
+       
+        _email: {
+          from: "A Human Being",
+          subject: "A message awaits.",
+          template: {
+            title: false,
+            footer: false,
+          },
+        },
+      });
     },
   },
-});
-    }
-   
-  }
 };
 </script>
 
